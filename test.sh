@@ -36,5 +36,11 @@ assert 5 " 4    + 1 "
 assert 45 "5+6*7-6/3"
 assert 15 "5*(9-6)"
 assert 4 "(3+5)/2"
+assert 3 "(((((3)))))"
+
+# 単行演算子
+assert 3 "+3"
+assert 13 "8+-3+-2*-4"
+#assert 11 "8+--3"
 
 echo OK
